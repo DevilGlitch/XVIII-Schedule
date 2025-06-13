@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <!--
+      This website was generated with Erinet Website Generator
+      
+      LIVE STREAM DATA:
+      This website automatically fetches stream data from:
+      https://https://crud.eri.bot/getWeek/{streamerId}
+      
+      The streams will refresh every 30 minutes while the page is open.
+      Always displays all 7 days of the week, starting with today.
+    -->
+    <html>
+      <head>
+        <title>TheLostMoon</title>
+        <link rel="stylesheet" href="index.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <script src="index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#DA004E">
+        <meta name="description" content="TheLostMoon's official website - Check out stream schedule and social media links">
+      </head>
+      <body>
+        <div class="center-div">
+          <div class="content">
+            <div class="image-cropper">
+              <img src="https://cdn.discordapp.com/avatars/1030790052814524498/a95f51d133a0c28a78769aa238b064a1.png" class="rounded" alt="TheLostMoon's profile picture" />
+            </div>
+            <h1>TheLostMoon</h1>
+          </div>
+        </div>
+        <div class="socials">
+          
+          <a href="https://www.twitch.tv/TheLostMoon" target="_blank" class="social-button">
+            <i class="fab fa-brands fa-twitch"></i>
+            <span class="tooltip">Twitch</span>
+          </a>
+
+          <a href="https://thelostmoon.net/discord" target="_blank" class="social-button">
+            <i class="fab fa-brands fa-discord"></i>
+            <span class="tooltip">Discord</span>
+          </a>
+
+          <a href="https://www.youtube.com/@TheLostMoonXVIII" target="_blank" class="social-button">
+            <i class="fab fa-brands fa-youtube"></i>
+            <span class="tooltip">YouTube</span>
+          </a>
+        </div>
+        
+        <!-- 
+          This schedule automatically updates from the API:
+          https://https://crud.eri.bot/getWeek/{streamerId}
+          
+          Always displays all 7 days of the week, starting with today
+        -->
+        <div id="gridSchedule" class="gridSchedule">
+          <div class="gridRow">
+            <div class="TableHeader scheduleDay">Day</div>
+            <div class="TableHeader scheduleDate">Date</div>
+            <div class="TableHeader scheduleStream">stream/time</div>
+          </div>
+          
+        </div>
+        <div id="NextStreamCountdown" class="center">
+          <div id="streamNow" hidden>
+            <b>Stream is NOW! <a href="https://www.twitch.tv/TheLostMoon">Join the stream</a></b>
+          </div>
+          <div id="streamCountdown">
+            <b>Next Stream Countdown: <span id="Countdown"></span></b>
+          </div>
+        </div>
+        <footer>
+          <p>Made with <a href="https://eri.bot">Eribot</a></p>
+        </footer>
+      </body>
+    </html>
