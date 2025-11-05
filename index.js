@@ -5,7 +5,7 @@ Date.prototype.addDays = function (days) {
     };
     
     // Streamer ID set during site generation
-    const STREAMER_ID = "27";
+    const STREAMER_ID = "28";
     const API_BASE_URL = "https://crud.eri.bot";
     
     let countdown;
